@@ -1,5 +1,3 @@
 function mygcd(x,y){
-    let prevY = y;
-    y = x % y;
-    return y ? mygcd(prevY, y) : prevY
+    return x % y ? mygcd(y, x % y) : y
 }
